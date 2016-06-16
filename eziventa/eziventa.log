@@ -1,0 +1,5 @@
+::1 - - [16/Jun/2016:17:21:17 -0600] "GET /MAMP/?language=Spanish HTTP/1.1" 200 15133 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36"
+::1 - - [16/Jun/2016:17:21:19 -0600] "GET /docs-assets/ico/favicon.png HTTP/1.1" 404 1981 "http://localhost/MAMP/?language=Spanish" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36"
+::1 - - [16/Jun/2016:17:21:20 -0600] "GET /MAMP/feed/needsUpdate.txt HTTP/1.1" 200 1 "http://localhost/MAMP/?language=Spanish" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36"
+::1 - - [16/Jun/2016:17:21:22 -0600] "GET / HTTP/1.1" 200 1767 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36"
+::1 - - [16/Jun/2016:17:22:23 -0600] "GET / HTTP/1.1" 200 1767 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36"
