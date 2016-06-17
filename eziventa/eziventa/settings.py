@@ -99,12 +99,12 @@ if socket.gethostname().startswith('iMac'):
 else:
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'controlplanta',
-            'USER': 'root',
-            'PASSWORD': 'root',
-            'HOST': 'localhost',  # Or an IP Address that your DB is hosted on
-            'PORT': '3306',
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME':  'eziventa',
+            'USER': 'emanuelziga',
+            'PASSWORD': 'emma101421',
+            'HOST': '127.0.0.1',
+            'PORT': '5432',
         }
     }
 
@@ -130,4 +130,4 @@ STATIC_URL = '/static/'
 if socket.gethostname().startswith('iMac'):
     STATIC_ROOT = "/Users/emanuelziga/GITHUB/EZIVENTA/eziventa/static/"
 else:
-    STATIC_ROOT = "/Users/emanuelziga/GITHUB/EZIVENTA/eziventa/static/"
+    STATIC_ROOT = "C:/Users/emanu/GITHUB/EZIVENTA/eziventa/static/"
