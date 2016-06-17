@@ -7,8 +7,8 @@ For more information on this file, see
 https://docs.djangoproject.com/en/1.8/howto/deployment/wsgi/
 """
 
-import os, sys
-
+import os
+import sys
 
 # add the hellodjango project path into the sys.path
 sys.path.append('/Users/emanuelziga/GITHUB/EZIVENTA/eziventa/eziventa')

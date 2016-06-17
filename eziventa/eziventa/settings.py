@@ -14,8 +14,10 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 import socket
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+if socket.gethostname().startswith('iMac'):
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+else:
+    BASE_DIR = os.path.realpath(os.path.dirname(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -38,6 +40,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'clients.apps.ClientsConfig',
+    'products.apps.ProductsConfig',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -69,30 +74,46 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'eziventa.wsgi.application'
+
+if socket.gethostname().startswith('iMac'):
+
+    WSGI_APPLICATION = 'eziventa.wsgi.application'
+else:
+    WSGI_APPLICATION = 'eziventa.wsgiWindows.application'
 
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':  'eziventa',
-        'USER': 'emanuelziga',
-        'PASSWORD': 'emma101421',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+if socket.gethostname().startswith('iMac'):
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME':  'eziventa',
+            'USER': 'emanuelziga',
+            'PASSWORD': 'emma101421',
+            'HOST': '127.0.0.1',
+            'PORT': '5432',
+        }
     }
-}
-
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'controlplanta',
+            'USER': 'root',
+            'PASSWORD': 'root',
+            'HOST': 'localhost',  # Or an IP Address that your DB is hosted on
+            'PORT': '3306',
+        }
+    }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Costa_Rica'
 
 USE_I18N = True
 
@@ -106,4 +127,7 @@ LOGIN_URL = '/admin/login/'
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = "/Users/emanuelziga/GITHUB/EZIVENTA/eziventa/static/"
+if socket.gethostname().startswith('iMac'):
+    STATIC_ROOT = "/Users/emanuelziga/GITHUB/EZIVENTA/eziventa/static/"
+else:
+    STATIC_ROOT = "/Users/emanuelziga/GITHUB/EZIVENTA/eziventa/static/"
