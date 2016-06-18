@@ -1,3 +1,248 @@
 [Thu Jun 16 23:21:19 2016] [error] Not Found: /docs-assets/ico/favicon.png
 [Thu Jun 16 23:21:22 2016] [error] Not Found: /
 [Thu Jun 16 23:22:23 2016] [error] Not Found: /
+[Fri Jun 17 17:04:48 2016] [error] Internal Server Error: /admin/clients/client/add/
+[Fri Jun 17 17:04:48 2016] [error] Traceback (most recent call last):
+[Fri Jun 17 17:04:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+[Fri Jun 17 17:04:48 2016] [error]     response = self.process_exception_by_middleware(e, request)
+[Fri Jun 17 17:04:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+[Fri Jun 17 17:04:48 2016] [error]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Fri Jun 17 17:04:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 541, in wrapper
+[Fri Jun 17 17:04:48 2016] [error]     return self.admin_site.admin_view(view)(*args, **kwargs)
+[Fri Jun 17 17:04:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+[Fri Jun 17 17:04:48 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:04:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+[Fri Jun 17 17:04:48 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:04:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 244, in inner
+[Fri Jun 17 17:04:48 2016] [error]     return view(request, *args, **kwargs)
+[Fri Jun 17 17:04:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in add_view
+[Fri Jun 17 17:04:48 2016] [error]     return self.changeform_view(request, None, form_url, extra_context)
+[Fri Jun 17 17:04:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+[Fri Jun 17 17:04:48 2016] [error]     return bound_func(*args, **kwargs)
+[Fri Jun 17 17:04:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+[Fri Jun 17 17:04:48 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:04:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+[Fri Jun 17 17:04:48 2016] [error]     return func.__get__(self, type(self))(*args2, **kwargs2)
+[Fri Jun 17 17:04:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 184, in inner
+[Fri Jun 17 17:04:48 2016] [error]     return func(*args, **kwargs)
+[Fri Jun 17 17:04:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1382, in changeform_view
+[Fri Jun 17 17:04:48 2016] [error]     self.log_addition(request, new_object, change_message)
+[Fri Jun 17 17:04:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 714, in log_addition
+[Fri Jun 17 17:04:48 2016] [error]     object_repr=force_text(object),
+[Fri Jun 17 17:04:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/encoding.py", line 80, in force_text
+[Fri Jun 17 17:04:48 2016] [error]     s = six.text_type(bytes(s), encoding, errors)
+[Fri Jun 17 17:04:48 2016] [error] UnicodeEncodeError: 'ascii' codec can't encode characters in position 9-10: ordinal not in range(128)
+[Fri Jun 17 17:06:07 2016] [error] Internal Server Error: /admin/clients/client/add/
+[Fri Jun 17 17:06:07 2016] [error] Traceback (most recent call last):
+[Fri Jun 17 17:06:07 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+[Fri Jun 17 17:06:07 2016] [error]     response = self.process_exception_by_middleware(e, request)
+[Fri Jun 17 17:06:07 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+[Fri Jun 17 17:06:07 2016] [error]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Fri Jun 17 17:06:07 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 541, in wrapper
+[Fri Jun 17 17:06:07 2016] [error]     return self.admin_site.admin_view(view)(*args, **kwargs)
+[Fri Jun 17 17:06:07 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+[Fri Jun 17 17:06:07 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:06:07 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+[Fri Jun 17 17:06:07 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:06:07 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 244, in inner
+[Fri Jun 17 17:06:07 2016] [error]     return view(request, *args, **kwargs)
+[Fri Jun 17 17:06:07 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in add_view
+[Fri Jun 17 17:06:07 2016] [error]     return self.changeform_view(request, None, form_url, extra_context)
+[Fri Jun 17 17:06:07 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+[Fri Jun 17 17:06:07 2016] [error]     return bound_func(*args, **kwargs)
+[Fri Jun 17 17:06:07 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+[Fri Jun 17 17:06:07 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:06:07 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+[Fri Jun 17 17:06:07 2016] [error]     return func.__get__(self, type(self))(*args2, **kwargs2)
+[Fri Jun 17 17:06:07 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 184, in inner
+[Fri Jun 17 17:06:07 2016] [error]     return func(*args, **kwargs)
+[Fri Jun 17 17:06:07 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1382, in changeform_view
+[Fri Jun 17 17:06:07 2016] [error]     self.log_addition(request, new_object, change_message)
+[Fri Jun 17 17:06:07 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 714, in log_addition
+[Fri Jun 17 17:06:07 2016] [error]     object_repr=force_text(object),
+[Fri Jun 17 17:06:07 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/encoding.py", line 80, in force_text
+[Fri Jun 17 17:06:07 2016] [error]     s = six.text_type(bytes(s), encoding, errors)
+[Fri Jun 17 17:06:07 2016] [error] UnicodeEncodeError: 'ascii' codec can't encode characters in position 9-10: ordinal not in range(128)
+[Fri Jun 17 17:09:19 2016] [error] Internal Server Error: /admin/clients/client/add/
+[Fri Jun 17 17:09:19 2016] [error] Traceback (most recent call last):
+[Fri Jun 17 17:09:19 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+[Fri Jun 17 17:09:19 2016] [error]     response = self.process_exception_by_middleware(e, request)
+[Fri Jun 17 17:09:19 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+[Fri Jun 17 17:09:19 2016] [error]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Fri Jun 17 17:09:19 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 541, in wrapper
+[Fri Jun 17 17:09:19 2016] [error]     return self.admin_site.admin_view(view)(*args, **kwargs)
+[Fri Jun 17 17:09:19 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+[Fri Jun 17 17:09:19 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:09:19 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+[Fri Jun 17 17:09:19 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:09:19 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 244, in inner
+[Fri Jun 17 17:09:19 2016] [error]     return view(request, *args, **kwargs)
+[Fri Jun 17 17:09:19 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in add_view
+[Fri Jun 17 17:09:19 2016] [error]     return self.changeform_view(request, None, form_url, extra_context)
+[Fri Jun 17 17:09:19 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+[Fri Jun 17 17:09:19 2016] [error]     return bound_func(*args, **kwargs)
+[Fri Jun 17 17:09:19 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+[Fri Jun 17 17:09:19 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:09:19 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+[Fri Jun 17 17:09:19 2016] [error]     return func.__get__(self, type(self))(*args2, **kwargs2)
+[Fri Jun 17 17:09:19 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 184, in inner
+[Fri Jun 17 17:09:19 2016] [error]     return func(*args, **kwargs)
+[Fri Jun 17 17:09:19 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1382, in changeform_view
+[Fri Jun 17 17:09:19 2016] [error]     self.log_addition(request, new_object, change_message)
+[Fri Jun 17 17:09:19 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 714, in log_addition
+[Fri Jun 17 17:09:19 2016] [error]     object_repr=force_text(object),
+[Fri Jun 17 17:09:19 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/encoding.py", line 80, in force_text
+[Fri Jun 17 17:09:19 2016] [error]     s = six.text_type(bytes(s), encoding, errors)
+[Fri Jun 17 17:09:19 2016] [error] UnicodeEncodeError: 'ascii' codec can't encode characters in position 9-10: ordinal not in range(128)
+[Fri Jun 17 17:11:35 2016] [error] Internal Server Error: /admin/clients/client/4/change/
+[Fri Jun 17 17:11:35 2016] [error] Traceback (most recent call last):
+[Fri Jun 17 17:11:35 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+[Fri Jun 17 17:11:35 2016] [error]     response = self.process_exception_by_middleware(e, request)
+[Fri Jun 17 17:11:35 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+[Fri Jun 17 17:11:35 2016] [error]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Fri Jun 17 17:11:35 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 541, in wrapper
+[Fri Jun 17 17:11:35 2016] [error]     return self.admin_site.admin_view(view)(*args, **kwargs)
+[Fri Jun 17 17:11:35 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+[Fri Jun 17 17:11:35 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:11:35 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+[Fri Jun 17 17:11:35 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:11:35 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 244, in inner
+[Fri Jun 17 17:11:35 2016] [error]     return view(request, *args, **kwargs)
+[Fri Jun 17 17:11:35 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1440, in change_view
+[Fri Jun 17 17:11:35 2016] [error]     return self.changeform_view(request, object_id, form_url, extra_context)
+[Fri Jun 17 17:11:35 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+[Fri Jun 17 17:11:35 2016] [error]     return bound_func(*args, **kwargs)
+[Fri Jun 17 17:11:35 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+[Fri Jun 17 17:11:35 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:11:35 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+[Fri Jun 17 17:11:35 2016] [error]     return func.__get__(self, type(self))(*args2, **kwargs2)
+[Fri Jun 17 17:11:35 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 184, in inner
+[Fri Jun 17 17:11:35 2016] [error]     return func(*args, **kwargs)
+[Fri Jun 17 17:11:35 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1385, in changeform_view
+[Fri Jun 17 17:11:35 2016] [error]     self.log_change(request, new_object, change_message)
+[Fri Jun 17 17:11:35 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 730, in log_change
+[Fri Jun 17 17:11:35 2016] [error]     object_repr=force_text(object),
+[Fri Jun 17 17:11:35 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/encoding.py", line 80, in force_text
+[Fri Jun 17 17:11:35 2016] [error]     s = six.text_type(bytes(s), encoding, errors)
+[Fri Jun 17 17:11:35 2016] [error] UnicodeEncodeError: 'ascii' codec can't encode character u'\\xfa' in position 9: ordinal not in range(128)
+[Fri Jun 17 17:14:34 2016] [error] Internal Server Error: /admin/clients/client/4/change/
+[Fri Jun 17 17:14:34 2016] [error] Traceback (most recent call last):
+[Fri Jun 17 17:14:34 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+[Fri Jun 17 17:14:34 2016] [error]     response = self.process_exception_by_middleware(e, request)
+[Fri Jun 17 17:14:34 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+[Fri Jun 17 17:14:34 2016] [error]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Fri Jun 17 17:14:34 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 541, in wrapper
+[Fri Jun 17 17:14:34 2016] [error]     return self.admin_site.admin_view(view)(*args, **kwargs)
+[Fri Jun 17 17:14:34 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+[Fri Jun 17 17:14:34 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:14:34 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+[Fri Jun 17 17:14:34 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:14:34 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 244, in inner
+[Fri Jun 17 17:14:34 2016] [error]     return view(request, *args, **kwargs)
+[Fri Jun 17 17:14:34 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1440, in change_view
+[Fri Jun 17 17:14:34 2016] [error]     return self.changeform_view(request, object_id, form_url, extra_context)
+[Fri Jun 17 17:14:34 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+[Fri Jun 17 17:14:34 2016] [error]     return bound_func(*args, **kwargs)
+[Fri Jun 17 17:14:34 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+[Fri Jun 17 17:14:34 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:14:34 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+[Fri Jun 17 17:14:34 2016] [error]     return func.__get__(self, type(self))(*args2, **kwargs2)
+[Fri Jun 17 17:14:34 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 184, in inner
+[Fri Jun 17 17:14:34 2016] [error]     return func(*args, **kwargs)
+[Fri Jun 17 17:14:34 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1385, in changeform_view
+[Fri Jun 17 17:14:34 2016] [error]     self.log_change(request, new_object, change_message)
+[Fri Jun 17 17:14:34 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 730, in log_change
+[Fri Jun 17 17:14:34 2016] [error]     object_repr=force_text(object),
+[Fri Jun 17 17:14:34 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/encoding.py", line 80, in force_text
+[Fri Jun 17 17:14:34 2016] [error]     s = six.text_type(bytes(s), encoding, errors)
+[Fri Jun 17 17:14:34 2016] [error] UnicodeEncodeError: 'ascii' codec can't encode character u'\\xfa' in position 9: ordinal not in range(128)
+[Fri Jun 17 17:15:48 2016] [error] Internal Server Error: /admin/clients/client/4/change/
+[Fri Jun 17 17:15:48 2016] [error] Traceback (most recent call last):
+[Fri Jun 17 17:15:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+[Fri Jun 17 17:15:48 2016] [error]     response = self.process_exception_by_middleware(e, request)
+[Fri Jun 17 17:15:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+[Fri Jun 17 17:15:48 2016] [error]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Fri Jun 17 17:15:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 541, in wrapper
+[Fri Jun 17 17:15:48 2016] [error]     return self.admin_site.admin_view(view)(*args, **kwargs)
+[Fri Jun 17 17:15:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+[Fri Jun 17 17:15:48 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:15:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+[Fri Jun 17 17:15:48 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:15:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 244, in inner
+[Fri Jun 17 17:15:48 2016] [error]     return view(request, *args, **kwargs)
+[Fri Jun 17 17:15:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1440, in change_view
+[Fri Jun 17 17:15:48 2016] [error]     return self.changeform_view(request, object_id, form_url, extra_context)
+[Fri Jun 17 17:15:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+[Fri Jun 17 17:15:48 2016] [error]     return bound_func(*args, **kwargs)
+[Fri Jun 17 17:15:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+[Fri Jun 17 17:15:48 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 17:15:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+[Fri Jun 17 17:15:48 2016] [error]     return func.__get__(self, type(self))(*args2, **kwargs2)
+[Fri Jun 17 17:15:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 184, in inner
+[Fri Jun 17 17:15:48 2016] [error]     return func(*args, **kwargs)
+[Fri Jun 17 17:15:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1385, in changeform_view
+[Fri Jun 17 17:15:48 2016] [error]     self.log_change(request, new_object, change_message)
+[Fri Jun 17 17:15:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 730, in log_change
+[Fri Jun 17 17:15:48 2016] [error]     object_repr=force_text(object),
+[Fri Jun 17 17:15:48 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/encoding.py", line 80, in force_text
+[Fri Jun 17 17:15:48 2016] [error]     s = six.text_type(bytes(s), encoding, errors)
+[Fri Jun 17 17:15:48 2016] [error] UnicodeEncodeError: 'ascii' codec can't encode character u'\\xf1' in position 10: ordinal not in range(128)
+[Fri Jun 17 18:25:27 2016] [error] Internal Server Error: /admin/clients/client/
+[Fri Jun 17 18:25:27 2016] [error] Traceback (most recent call last):
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+[Fri Jun 17 18:25:27 2016] [error]     response = self.process_exception_by_middleware(e, request)
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+[Fri Jun 17 18:25:27 2016] [error]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 541, in wrapper
+[Fri Jun 17 18:25:27 2016] [error]     return self.admin_site.admin_view(view)(*args, **kwargs)
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+[Fri Jun 17 18:25:27 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+[Fri Jun 17 18:25:27 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 244, in inner
+[Fri Jun 17 18:25:27 2016] [error]     return view(request, *args, **kwargs)
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+[Fri Jun 17 18:25:27 2016] [error]     return bound_func(*args, **kwargs)
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+[Fri Jun 17 18:25:27 2016] [error]     response = view_func(request, *args, **kwargs)
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+[Fri Jun 17 18:25:27 2016] [error]     return func.__get__(self, type(self))(*args2, **kwargs2)
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1577, in changelist_view
+[Fri Jun 17 18:25:27 2016] [error]     selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/db/models/query.py", line 240, in __len__
+[Fri Jun 17 18:25:27 2016] [error]     self._fetch_all()
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/db/models/query.py", line 1074, in _fetch_all
+[Fri Jun 17 18:25:27 2016] [error]     self._result_cache = list(self.iterator())
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/db/models/query.py", line 52, in __iter__
+[Fri Jun 17 18:25:27 2016] [error]     results = compiler.execute_sql()
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 848, in execute_sql
+[Fri Jun 17 18:25:27 2016] [error]     cursor.execute(sql, params)
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+[Fri Jun 17 18:25:27 2016] [error]     return super(CursorDebugWrapper, self).execute(sql, params)
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+[Fri Jun 17 18:25:27 2016] [error]     return self.cursor.execute(sql, params)
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+[Fri Jun 17 18:25:27 2016] [error]     six.reraise(dj_exc_type, dj_exc_value, traceback)
+[Fri Jun 17 18:25:27 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+[Fri Jun 17 18:25:27 2016] [error]     return self.cursor.execute(sql, params)
+[Fri Jun 17 18:25:27 2016] [error] ProgrammingError: column clients_client.name does not exist
+[Fri Jun 17 18:25:27 2016] [error] LINE 1: SELECT "clients_client"."id", "clients_client"."name", "clie...
+[Fri Jun 17 18:25:27 2016] [error]                                       ^
+[Fri Jun 17 18:25:27 2016] [error] 
+[Fri Jun 17 19:56:28 2016] [error] Internal Server Error: /admin/clients/client/4/change/
+[Fri Jun 17 19:56:28 2016] [error] Traceback (most recent call last):
+[Fri Jun 17 19:56:28 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+[Fri Jun 17 19:56:28 2016] [error]     response = self.process_exception_by_middleware(e, request)
+[Fri Jun 17 19:56:28 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+[Fri Jun 17 19:56:28 2016] [error]     response = response.render()
+[Fri Jun 17 19:56:28 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+[Fri Jun 17 19:56:28 2016] [error]     self.content = self.rendered_content
+[Fri Jun 17 19:56:28 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+[Fri Jun 17 19:56:28 2016] [error]     template = self._resolve_template(self.template_name)
+[Fri Jun 17 19:56:28 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/template/response.py", line 90, in _resolve_template
+[Fri Jun 17 19:56:28 2016] [error]     new_template = self.resolve_template(template)
+[Fri Jun 17 19:56:28 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+[Fri Jun 17 19:56:28 2016] [error]     return select_template(template, using=self.using)
+[Fri Jun 17 19:56:28 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
+[Fri Jun 17 19:56:28 2016] [error]     raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+[Fri Jun 17 19:56:28 2016] [error] TemplateDoesNotExist: admin/clients/client/change_form.html, admin/clients/change_form.html, admin/change_form.html
