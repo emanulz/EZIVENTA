@@ -9,20 +9,20 @@ from django.db import models
 
 class Client(models.Model):
 
-    SinId = 'noid'
+    NoId = 'noid'
     Nacional = 'naci'
-    Passaporte = 'pass'
-    Juridica = 'juri'
+    Passport = 'pass'
+    Juridic = 'juri'
 
-    ID_CHOICES = ((SinId,'Sin Identificación'),
+    ID_CHOICES = ((NoId,'Sin Identificación'),
                   (Nacional,'Cédula Nacional'),
-                  (Passaporte,'Número de Pasaporte'),
-                  (Juridica,'Cédula Jurídica')
+                  (Passport,'Número de Pasaporte'),
+                  (Juridic,'Cédula Jurídica')
                   )
 
     client_name = models.CharField(max_length=255, verbose_name='Nombre')
     client_last_name = models.CharField(max_length=255, blank=True, verbose_name='Apellidos')
-    client_id_type = models.CharField(max_length=4, choices=ID_CHOICES, default=SinId,
+    client_id_type = models.CharField(max_length=4, choices=ID_CHOICES, default=NoId,
                                       verbose_name='Tipo de Identificación')
     client_id = models.PositiveIntegerField(blank=True, verbose_name='Identificación')
     client_address = models.CharField(max_length=255, blank=True, verbose_name='Dirección')

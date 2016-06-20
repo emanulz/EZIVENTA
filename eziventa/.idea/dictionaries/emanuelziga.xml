@@ -3,15 +3,39 @@
     <words>
       <w>apellido</w>
       <w>apellidos</w>
+      <w>automático</w>
+      <w>autoprice</w>
+      <w>barras</w>
       <w>cliente</w>
       <w>clientes</w>
+      <w>costo</w>
       <w>código</w>
+      <w>departamento</w>
+      <w>departamentos</w>
+      <w>descripción</w>
       <w>dirección</w>
+      <w>existencia</w>
       <w>eziventa</w>
+      <w>granel</w>
       <w>identificación</w>
+      <w>impuestos</w>
+      <w>inventario</w>
+      <w>inventarios</w>
+      <w>mínimo</w>
       <w>nombre</w>
+      <w>paquete</w>
+      <w>precio</w>
+      <w>productdepartment</w>
+      <w>producto</w>
+      <w>sellmethod</w>
+      <w>sistema</w>
       <w>teléfono</w>
       <w>tipo</w>
+      <w>unidad</w>
+      <w>useinventory</w>
+      <w>utilidad</w>
+      <w>vende</w>
+      <w>venta</w>
     </words>
   </dictionary>
 </component>

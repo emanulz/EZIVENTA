@@ -246,3 +246,5 @@
 [Fri Jun 17 19:56:28 2016] [error]   File "/Users/emanuelziga/GITHUB/EZIVENTA/vezi/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
 [Fri Jun 17 19:56:28 2016] [error]     raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
 [Fri Jun 17 19:56:28 2016] [error] TemplateDoesNotExist: admin/clients/client/change_form.html, admin/clients/change_form.html, admin/change_form.html
+[Mon Jun 20 16:07:57 2016] [error] Not Found: /docs-assets/ico/favicon.png
+[Mon Jun 20 16:07:59 2016] [error] Not Found: /
