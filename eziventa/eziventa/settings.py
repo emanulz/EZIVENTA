@@ -85,28 +85,17 @@ else:
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-if socket.gethostname().startswith('iMac'):
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME':  'eziventa',
-            'USER': 'emanuelziga',
-            'PASSWORD': 'emma101421',
-            'HOST': '127.0.0.1',
-            'PORT': '5432',
-        }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME':  'eziventa',
+        'USER': 'emanuelziga',
+        'PASSWORD': 'emma101421',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME':  'eziventa',
-            'USER': 'emanuelziga',
-            'PASSWORD': 'emma101421',
-            'HOST': '127.0.0.1',
-            'PORT': '5432',
-        }
-    }
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
@@ -130,4 +119,5 @@ STATIC_URL = '/static/'
 if socket.gethostname().startswith('iMac'):
     STATIC_ROOT = "/Users/emanuelziga/GITHUB/EZIVENTA/eziventa/static/"
 else:
-    STATIC_ROOT = "C:/Users/emanu/GITHUB/EZIVENTA/eziventa/static/"
+    # STATIC_ROOT = "C:/Users/emanu/GITHUB/EZIVENTA/eziventa/static/"
+    STATIC_ROOT = (os.path.join(BASE_DIR, 'static'))
