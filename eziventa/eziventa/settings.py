@@ -14,10 +14,9 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 import socket
 
-if socket.gethostname().startswith('iMac'):
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-else:
-    BASE_DIR = os.path.realpath(os.path.dirname(__file__))
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -112,7 +111,7 @@ else:
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'es'
+LANGUAGE_CODE = 'es_MX'
 
 TIME_ZONE = 'America/Costa_Rica'
 
