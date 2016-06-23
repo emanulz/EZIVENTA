@@ -7,6 +7,8 @@
 // SELECTORS
 
     var sell_price = $('#id_product_sellprice');
+    var label_sell_price = $('.field-product_sellprice label');
+
 
     var use_inv = $('#id_product_useinventory');
     var div_inventory = $('.field-product_inventory');
@@ -19,10 +21,24 @@
     var use_taxes = $('#id_product_usetaxes');
     var div_taxes = $('.field-product_taxes');
 
+    var taxes = $('#id_product_taxes');
+    var cost = $('#id_product_cost');
+    var utility = $('#id_product_utility');
+    var price = $('#id_product_price');
+
+    var btn_save = $("[name='_save']");
+
 
 //SELECTORS END
 
-    //sell_price.prop('disabled', true);
+    label_sell_price.css({"font-size": "16px"});
+    sell_price.css({"font-size": "16px"});
+
+    sell_price.prop('disabled', true);
+
+    btn_save.on('click', function () {
+        sell_price.prop('disabled', false);
+    });
 
 // FIELDS HIDE AND SHOW
 
@@ -43,6 +59,7 @@
             div_inventory.hide();
             div_min_inventory.hide();
         }
+
     });//USE INVENTORY ENDS
 
 //AUTO PRICE FIELDS
@@ -84,12 +101,44 @@
         else {
             div_taxes.hide();
         }
+
+        SetSellPrice();
+
     });// USE TAXES TOGGLE ENDS
 
+    taxes.change(function(){//TAXES FIELD CHANGES
+        if (taxes.val()==""){
+            taxes.val(parseFloat(0).toFixed(2));
+        }
+        SetSellPrice();
+    });//ENDS TAXES FIELD CHANGES
+
+    cost.change(function(){//COST FIELD CHANGES
+        if (cost.val()==""){
+            cost.val(parseFloat(0).toFixed(2));
+        }
+        SetSellPrice();
+    });//ENDS COST FIELD CHANGES
+
+    utility.change(function(){//UTILITY FIELD CHANGES
+        if (utility.val()==""){
+            utility.val(parseFloat(0).toFixed(2));
+        }
+        SetSellPrice();
+    });//ENDS UTILITY FIELD CHANGES
+
+   price.change(function(){//PRICE FIELD CHANGES
+        if (price.val()==""){
+            price.val(parseFloat(0).toFixed(2));
+        }
+        SetSellPrice();
+    });//ENDS PRICE FIELD CHANGES
 
     });//document ready closes
 
     function SetSellPrice (){
+
+        console.log("called");
 
         var sell_price = $('#id_product_sellprice');
         var cost = $('#id_product_cost');
@@ -100,13 +149,23 @@
         var taxes = $('#id_product_taxes');
 
         var price_to_set = 0;
-
+        var tax=(taxes.val()/100)+1;
         if(autoprice.is(':checked')){
-            price_to_set = cost.val()*(1+(utility.val()/100));
+            if(use_taxes.is(':checked')){
+
+                price_to_set = (cost.val()*(1+(utility.val()/100)))*tax;
+            }
+            else{
+                price_to_set = cost.val()*(1+(utility.val()/100));
+            }
         }
         else{
-            console.log(price.val());
-            price_to_set = price.val();
+            if(use_taxes.is(':checked')){
+                price_to_set = price.val()*tax;
+            }
+            else{
+                price_to_set = price.val();
+            }
         }
 
         sell_price.val(parseFloat(price_to_set).toFixed(2));
